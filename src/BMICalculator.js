@@ -44,13 +44,13 @@ export default function BMICalculator() {
     if (bmiValue < 18.5) {
       setStatusColor('#C7B300');
       return 'Underweight';
-    } else if (bmiValue >= 18.5 && bmiValue <= 22.99) {
+    } else if (bmiValue >= 18.5 && bmiValue <= 24.9) {
       setStatusColor('#267726');
-      return 'Normal';
-    } else if (bmiValue >= 23 && bmiValue <= 27.5) {
+      return 'Healthy';
+    } else if (bmiValue >= 25 && bmiValue <= 29.9) {
       setStatusColor('#E72F0F');
       return 'Overweight';
-    } else if (bmiValue > 27.5) {
+    } else if (bmiValue >= 30) {
       setStatusColor('#C11306');
       return 'Obese';
     } else {
